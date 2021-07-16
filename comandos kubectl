@@ -1,0 +1,19 @@
+kubectl get node --watch -> visualiza os  node existentes
+
+kubectl apply -f {url do arquivo} -> cria um componente do cluster conforme especificado no arquivo yaml/yml
+
+kubectl get pods --watch -> acompanha a criacao e o status dos pods existentes
+
+kubectl describe pod {nome do pod} -> descreve os dados do pod especificado
+
+kubectl exec -it {nome do pod a ser acessado} -- bash -> acessa o pod para que seja possivel executar comandos dentro dele
+
+kubectl annotate deployment portal-noticias-deployment kubernets.io/change-cause="Criando portal de noticias" -> anota versionamento de um deploy
+
+kubectl delete pods --all -> deleta todos os pods
+curl envia comando de requisicao
+
+#definicao das tecs utilizadas no kubernet
+cluster -> local criado onde ira ficar armazenado os services, pods
+
+services -> utilizado para fazer o mapeamento entre pods, pois tem um ip fixo
